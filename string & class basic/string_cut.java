@@ -7,25 +7,26 @@ public class string_cut {
         Scanner sc = new Scanner(System.in);
         String text = sc.nextLine();
         char alphabet = sc.next().charAt(0);
-        int start = 0;
-        boolean out = false;
-        boolean target = false;
+        boolean found = false;
+        boolean print = false;
+        int prev = 0;
         for(int i=0;i<text.length();i++){
             if(text.charAt(i) == alphabet){
-                target = true;
-                if(start != i){
-                    System.out.println(text.substring(start,i));
-                    out = true;
+                found = true;
+                if(prev != i){
+                    System.out.println(text.substring(prev, i));
+                    print = true;
                 }
-                start = i+1;
-            }else if(i == text.length() - 1 && start != 0){
-                System.out.println(text.substring(start,text.length()));
-                out = true;
+                prev = i+1;
+            } else if(i == text.length()-1 && prev != 0){
+                System.out.println(text.substring(prev, text.length()));
+                print = true;
             }
         }
-        if(target == false){
+
+        if(!found){
             System.out.println("no target character found");
-        }else if(out == false){
+        } else if(!print){
             System.out.println("no output");
         }
     }
