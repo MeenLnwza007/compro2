@@ -4,12 +4,12 @@ import java.util.Scanner;
 public class BaseConverter {
 
     String convertBase(int decimal, int base) {
-        if(decimal == 0){
-            return "";
+        int frac = decimal%base;
+        int divide = decimal/base;
+        if(divide == 0){
+            return frac+"";
         }else{
-            int frac = decimal % base;
-            decimal = decimal / base;
-            return convertBase(decimal,base) + frac;
+            return convertBase(divide,base) + frac;
         }
     }
 
