@@ -4,13 +4,12 @@ import java.util.Scanner;
 public class Account3 {
     int balance = 10000;
     int deposit(int money){
-        int result = 0;
         if(money > 0){
-            result = 0;
-        }else if(money <=0){
-            result = -1;
+            balance += money;
+            return 0;
+        }else{
+            return -1;
         }
-        return result;
     }
     
     public static void main(String[] args) {
@@ -19,9 +18,8 @@ public class Account3 {
         Account3 m = new Account3();
         int n = m.deposit(money);
         if(n == 0){
-            m.balance += money;
             System.out.println(m.balance);
-        }else if(n == -1){
+        }else{
             System.out.println("Error");
         }
     }
