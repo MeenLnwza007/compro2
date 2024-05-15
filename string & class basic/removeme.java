@@ -13,18 +13,13 @@ public class removeme {
             if(order == 1){
                 if(str.indexOf(word) != -1){
                     str = str.substring(0, first) + str.substring(first+word.length(),str.length());
-                    System.out.println(str);
-                }else{
-                    System.out.println(str);
                 }
             }else if(order == 2){
                 if(str.indexOf(word) != -1){
                     str = str.substring(0, last) + str.substring(last+word.length(),str.length());
-                    System.out.println(str);
-                }else{
-                    System.out.println(str);
                 }
             }
+            System.out.println(str);
         }
     }
 }
