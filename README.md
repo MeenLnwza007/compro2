@@ -1,2 +1,2 @@
-### computer programming 2
-problem link: https://rproxy.cp.su.ac.th:8456/
+### Computer Programming 2
+Problem link: https://rproxy.cp.su.ac.th:8456/
