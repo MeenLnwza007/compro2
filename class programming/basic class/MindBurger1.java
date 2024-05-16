@@ -34,7 +34,7 @@ class Burger {
     }
 }
 
-public class mindburger {
+public class MindBurger1 {
     public static void main(String[] args){
     Scanner sc = new Scanner(System.in);
     String meatorder = sc.next();
