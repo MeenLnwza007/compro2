@@ -1,4 +1,4 @@
-/*
+
 import java.util.Scanner;
 
 class Party{
@@ -65,4 +65,3 @@ public class KorKorTor {
         }
     }
 }
-*/
